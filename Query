@@ -1,0 +1,9 @@
+-- Ejercicio1
+select usuario,nombre from usuario inner join empleado on usuario.idempleado = empleado.idempleado;
+-- Ejercicio2
+select email as correo from empleado inner join usuario on empleado.idempleado=usuario.idempleado 
+where activo = 1;
+-- Ejercico3
+select count(idpublicacion) from publicacion where autor like 'Eric G. Coronel Castillo';
+-- Ejercico4
+select sum(precio) from venta inner join empleado on venta.idempleado = empleado.idempleado where nombre = 'EMILIO';
